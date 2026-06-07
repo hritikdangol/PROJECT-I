@@ -1,27 +1,27 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="login.css"/>
-    </head>
-<body>
-    <div class="page"> </div>
-        <div>Welcome back</div>
-        <div>Log in to your SaveBites account</div>
-        <div class="role">
-          <button>Customer</button>
-          <button>Volunteer</button>
-          <button>Restaurant</button>
-        </div>
-        <div id="form">
-          <div class="form-group">
-            <div>Email address</div>
-            <input type="email" placeholder="you@example.com"/>
-            <div>Password</div>
-            <input type="password" placeholder="••••••••"/>
-          <a class="forgot" href="#">Forgot password?</a>
-          <button onclick="showPage('login')">Log in</button>
-          <div>or</div>
-          <div>Don't have an account? <a href="#" onclick="showPage('login')">Sign up</a></div>
-        </div>
+<head>
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
+  <body>
+    <script src="../js/script.js"></script>
+    </body>
+<div class="page">
+  <h1>Customer Login</h1>
+  <p>Log in to your SaveBites account</p>
+    <div class="role">
+        <button type="button" onclick="goToVolunteerLogin()">Volunteer</button>
+        <button type="button" onclick="goToRestaurantLogin()">Restaurant</button>
     </div>
-</body>
-</html>
+    <div class="form-group">
+        <div>Email Address</div>
+        <input type="email" placeholder="you@example.com">
+        <div>Password</div>
+        <input type="password" placeholder="••••••••">
+    </div>
+    <a class="forgot" href="#">Forgot Password?</a>
+    <button class="login-btn" type="submit">Log In</button>
+    <div class="bottom-text">
+        Don't have an account?
+        <button type="button" onclick="goToSignup()">Sign Up</button>
+    </div>
+
+</div>

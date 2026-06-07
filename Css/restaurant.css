@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2faf2;
+}
+
+.container{
+    width:500px;
+    margin:50px auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.container h1{
+    text-align:center;
+    color:rgb(0,136,61);
+    margin-bottom:10px;
+}
+
+.container p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+input:focus{
+    outline:none;
+    border-color:rgb(0,136,61);
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    border:none;
+    border-radius:6px;
+    background:rgb(0,136,61);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:rgb(0,110,50);
+    transition:0.3s;
+}
+
+.forgot{
+    display:block;
+    margin-top:10px;
+    text-align:right;
+    text-decoration:none;
+    color:rgb(0,136,61);
+}
+
+.bottom-text{
+    margin-top:20px;
+    text-align:center;
+}
+
+.bottom-text a{
+    color:rgb(0,136,61);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.bottom-text a:hover,
+.forgot:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+    .container{
+        width:90%;
+        padding:25px;
+    }
+}

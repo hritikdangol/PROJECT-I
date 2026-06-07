@@ -114,12 +114,12 @@ body{
 
 .work{
     padding:10px;
-    background:white;
+    background:#f2faf2;
     text-align:center;
 }
 
 .work h2{
-    color:rgb(255, 255, 255);
+    color:rgb(0, 136, 61);
     margin-bottom:15px;
 }
 .step{
@@ -130,18 +130,26 @@ body{
     margin:20px;
 }
 .work-diagram{
-    margin-top:50px;
     display:flex;
     justify-content:center;
-    flex-direction:row;
+    align-items:center;
+    gap:10px;
+    margin-top:30px;
 }
 
-.work-diagram div{
-    width:250px;
-    background:#e8f5e9;
+.step{
+    width:200px;
     padding:20px;
+    background:#e8f5e9;
     border-radius:10px;
+    text-align:center;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.arrow{
+    font-size:30px;
+    color:rgb(0,136,61);
+    font-weight:bold;
 }
 .bottom{
     padding:80px;
