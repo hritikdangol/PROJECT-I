@@ -1,0 +1,45 @@
+.page{
+    padding:60px 20px;
+}
+.login-page{
+    max-width:450px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 15px rgba(0,0,0,0.1);
+}
+.role{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.role button{
+    flex:1;
+    margin:5px;
+    padding:10px;
+    border:none;
+    background:rgb(0, 136, 61);
+    color:white;
+    border-radius:5px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group input{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.forgot{
+    display:block;
+    margin:10px 0;
+    color:rgb(0, 136, 61);
+    text-decoration:none;
+}
