@@ -9,7 +9,7 @@
 <nav class="nav">
 
     <div class="logo">
-      <div href="#">  <img src="../assets/logo.png" alt="logo"/></div>
+      <div href="#">  <img src="../asset/logo.png" alt="logo"/></div>
         <p>Save Food, Feed Lives</p>
     </div>
 <div class="nav-right">
@@ -18,17 +18,18 @@
     <a href="html/volunteerlogin.html"><button>Volunteer</button></a>
     <a href="html/restaurantlogin.html"><button>Restaurant</button></a>
     <a href="html/login.html"><button>Log In</button></a>
-    <a href="html/signup.html"><button>Sign Up</button></a>
 </div>
-
 </nav>
+
+
+</div>
   <div class="main">
     <div>
       <h1 >Save Food<br>Feed Lives</h1>
       <div>Food Rescue Platform</div>
       <p>SaveBites connects restaurants with leftover food to students, families, and stray animals — through affordable mystery boxes and a volunteer network.</p>
       <div class="main-buttons">
-        <button onclick="showPage('browse')">Find food near me</button>
+        <button onclick="showPage('browse')">Browse Boxes</button>
         <button onclick="goToVolunteerLogin()">Become a volunteer</button>
       </div>
       <div class="main-details">
@@ -52,6 +53,64 @@
         <p>Animals Fed</p>
     </div>
 </div>
+
+
+<div class="featured-food">
+    <h2 align="center">Available Mystery Boxes</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="../asset/food1.jpg" alt="Food Box">
+            <h3>Mystery Box #1</h3>
+            <p>Rs. 199</p>
+            <p>Pickup: 7 PM - 9 PM</p>
+            <button>Reserve Now</button>
+        </div>
+
+        <div class="food-card">
+            <img src="../asset/food2.jpg" alt="Food Box">
+            <h3>Mystery Box #2</h3>
+            <p>Rs. 249</p>
+            <p>Pickup: 8 PM - 10 PM</p>
+            <button>Reserve Now</button>
+        </div>
+
+        <div class="food-card">
+            <img src="../asset/food3.jpg" alt="Food Box">
+            <h3>Mystery Box #3</h3>
+            <p>Rs. 299</p>
+            <p>Pickup: 6 PM - 8 PM</p>
+            <button>Reserve Now</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="roles">
+
+    <h2 align="center">Who Can Use SaveBites?</h2>
+
+    <div class="role-container">
+
+        <div class="role-card">
+            <h3>Customers</h3>
+            <p>Browse and reserve affordable mystery food boxes.</p>
+        </div>
+
+        <div class="role-card">
+            <h3>Restaurants</h3>
+            <p>List surplus food and reduce daily food waste.</p>
+        </div>
+
+        <div class="role-card">
+            <h3>Volunteers</h3>
+            <p>Distribute remaining food to needy people and animals.</p>
+        </div>
+
+    </div>
     <!-- Food Flow Diagram -->
     <div class="work">
     <h2>How SaveBites Works</h2>
@@ -61,23 +120,26 @@
  <div class="work-diagram">
     <div class="step">Restaurant lists surplus food</div>
     <div class="arrow">➜</div>
-
     <div class="step">Food packaged as mystery boxes</div>
     <div class="arrow">➜</div>
-
     <div class="step">Users purchase at discount</div>
     <div class="arrow">➜</div>
 
     <div class="step">Remaining food donated</div>
-</div> 
 </div>
+
   <div align ="center" class="bottom">
     <p align="center"><b>Join SaveBites</b></p>
-    <h2 >Ready to save food and feed lives?</h2>
+    <h1>Ready to save food and feed lives?</h1>
      <button onclick="goToSignup()">Sign up as customer</button>
      <button onclick="goToVolunteerLogin()">Join as volunteer</button>
      <button onclick="goToRestaurantLogin()">Register restaurant</button>
     </div>
   </div>
 </body>
+<footer>
+    <h3>SaveBites</h3>
+    <p>Save Food, Feed Lives.</p>
+    <p>© 2026 SaveBites. All Rights Reserved.</p>
+</footer>
 </html>
