@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8"/>
+</head>
+<body>
+  <script src="js/script.js"></script>
+<nav class="nav">
+
+    <div class="logo">
+      <div href="#">  <img src="assets/logo.png" alt="logo"/></div>
+        <p>Save Food, Feed Lives</p>
+    </div>
+<div class="nav-right">
+    <a href="index.html"><button>Home</button></a>
+    <a href="#"><button>Dashboard</button></a>
+    <a href="html/volunteerlogin.html"><button>Volunteer</button></a>
+    <a href="html/restaurantlogin.html"><button>Restaurant</button></a>
+    <a href="html/login.html"><button>Log In</button></a>
+    <a href="html/signup.html"><button>Sign Up</button></a>
+</div>
+
+</nav>
+  <div class="main">
+    <div>
+      <h1 >Save Food<br>Feed Lives</h1>
+      <div>Food Rescue Platform</div>
+      <p>SaveBites connects restaurants with leftover food to students, families, and stray animals — through affordable mystery boxes and a volunteer network.</p>
+      <div class="main-buttons">
+        <button onclick="showPage('browse')">Find food near me</button>
+        <button onclick="goToVolunteerLogin()">Become a volunteer</button>
+      </div>
+      <div class="main-details">
+    <div>
+        <h2>100+</h2>
+        <p>Restaurants</p>
+    </div>
+
+    <div>
+        <h2>3,200</h2>
+        <p>Meals Saved</p>
+    </div>
+
+    <div>
+        <h2>100+</h2>
+        <p>Volunteers</p>
+    </div>
+
+    <div>
+        <h2>620</h2>
+        <p>Animals Fed</p>
+    </div>
+</div>
+    <!-- Food Flow Diagram -->
+    <div class="work">
+    <h2>How SaveBites Works</h2>
+    <p>
+        A simple flow from restaurant surplus to full stomachs.
+    </p> 
+ <div class="work-diagram">
+    <div class="step">Restaurant lists surplus food</div>
+    <div class="arrow">➜</div>
+
+    <div class="step">Food packaged as mystery boxes</div>
+    <div class="arrow">➜</div>
+
+    <div class="step">Users purchase at discount</div>
+    <div class="arrow">➜</div>
+
+    <div class="step">Remaining food donated</div>
+</div> 
+</div>
+  <div align ="center" class="bottom">
+    <p align="center"><b>Join SaveBites</b></p>
+    <h2 >Ready to save food and feed lives?</h2>
+     <button onclick="goToSignup()">Sign up as customer</button>
+     <button onclick="goToVolunteerLogin()">Join as volunteer</button>
+     <button onclick="goToRestaurantLogin()">Register restaurant</button>
+    </div>
+  </div>
+</body>
+</html>
