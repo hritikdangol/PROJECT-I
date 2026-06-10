@@ -4,34 +4,35 @@
     <title>Sign Up - SaveBites</title>
     <link rel="stylesheet" href="../css/signup.css">
 </head>
+
 <body>
 
 <div class="container">
     <h1>Create Account</h1>
     <p>Join SaveBites today</p>
 
-    <form>
+    <form onsubmit="register(event)">
 
         <label>Register As</label>
-        <select>
+        <select id="role">
             <option>Customer</option>
             <option>Volunteer</option>
         </select>
 
         <label>Full Name</label>
-        <input type="text" placeholder="Enter full name">
+        <input type="text" id="fullname" placeholder="Enter full name" required>
 
         <label>Email</label>
-        <input type="email" placeholder="Enter email">
+        <input type="email" id="email" placeholder="Enter email" required>
 
         <label>Phone Number</label>
-        <input type="tel" placeholder="98XXXXXXXX">
+        <input type="tel" id="phone" placeholder="98XXXXXXXX" required>
 
         <label>Password</label>
-        <input type="password" placeholder="Create password">
+        <input type="password" id="password" placeholder="Create password" required>
 
         <label>Confirm Password</label>
-        <input type="password" placeholder="Confirm password">
+        <input type="password" id="confirmPassword" placeholder="Confirm password" required>
 
         <button type="submit">Register</button>
 
@@ -42,6 +43,8 @@
         <a href="login.html">Login</a>
     </p>
 </div>
+
+<script src="../js/signup.js"></script>
 
 </body>
 </html>
