@@ -1,19 +1,30 @@
 function goToLogin() {
-    window.location.href = "/PROJECT-I/html/login.html";
+    window.location.href = "/html/login.html";
 }
 
 function goToSignup() {
-    window.location.href = "/PROJECT-I/html/signup.html";
+    window.location.href = "/html/signup.html";
 }
 
 function goToVolunteerLogin() {
-    window.location.href = "/PROJECT-I/html/volunteerlogin.html";
+    window.location.href = "/html/volunteerlogin.html";
 }
 
 function goToRestaurantLogin() {
-    window.location.href = "/PROJECT-I/html/restaurantlogin.html";
+    window.location.href = "/html/restaurantlogin.html";
 }
 
 function goToRestaurantSignup() {
-    window.location.href = "/PROJECT-I/html/restaurantsignup.html";
+    window.location.href = "html/restaurantsignup.html";
+}
+
+function showPage(page) {
+    alert(page);
+}
+function goBack() {
+  if (document.referrer !== "") {
+    window.history.back();
+  } else {
+    window.location.href = "../index.html";
+  }
 }

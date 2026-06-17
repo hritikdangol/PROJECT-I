@@ -1,116 +1,139 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.back-circle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgb(0,136,61);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 body{
-    background:#f2faf2;
+    background: #f2faf2;
 }
 
 .page{
-    width:400px;
-    margin:80px auto;
-    background:white;
-    padding:35px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .page h1{
-    text-align:center;
-    color:rgb(0,136,61);
-    margin-bottom:10px;
+    text-align: center;
+    color: rgb(0,136,61);
+    margin-bottom: 10px;
 }
 
 .page p{
-    text-align:center;
-    margin-bottom:20px;
-    color:#555;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-.role{
-    display:flex;
-    justify-content:space-between;
-    margin:20px 0;
-    gap:10px;
+/* Styled the new dropdown container */
+.role {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 8px;
 }
 
-.role button{
-    flex:1;
-    padding:12px;
-    border:none;
-    background:rgb(0,136,61);
-    color:white;
-    border-radius:6px;
-    cursor:pointer;
-    font-weight:bold;
+.role label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
 }
 
-.role button:hover{
-    background:rgb(0,110,50);
+/* Styled the dropdown menu */
+.role select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+.role select:focus {
+    border-color: rgb(0,136,61);
 }
 
 .form-group{
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 .form-group div{
-    margin-top:15px;
-    margin-bottom:5px;
-    font-weight:bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .form-group input{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:6px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 .form-group input:focus{
-    outline:none;
-    border-color:rgb(0,136,61);
+    outline: none;
+    border-color: rgb(0,136,61);
 }
 
 .forgot{
-    display:block;
-    margin:10px 0;
-    text-align:right;
-    color:rgb(0,136,61);
-    text-decoration:none;
+    display: block;
+    margin: 10px 0;
+    text-align: right;
+    color: rgb(0,136,61);
+    text-decoration: none;
 }
 
 .login-btn{
-    width:100%;
-    padding:12px;
-    margin-top:10px;
-    border:none;
-    border-radius:6px;
-    background:rgb(0,136,61);
-    color:white;
-    font-size:16px;
-    cursor:pointer;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(0,136,61);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .login-btn:hover{
-    background:rgb(0,110,50);
+    background: rgb(0,110,50);
 }
 
 .bottom-text{
-    text-align:center;
-    margin-top:20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .bottom-text button{
-    background:none;
-    border:none;
-    color:rgb(0,136,61);
-    font-weight:bold;
-    cursor:pointer;
+    background: none;
+    border: none;
+    color: rgb(0,136,61);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .bottom-text button:hover{
-    text-decoration:underline;
+    text-decoration: underline;
 }
