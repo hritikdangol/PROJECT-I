@@ -1,4 +1,4 @@
-// Base path for GitHub Pages project
+
 const BASE = "/PROJECT-I/";
 
 function goToLogin() {
