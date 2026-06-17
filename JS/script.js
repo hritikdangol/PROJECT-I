@@ -21,3 +21,10 @@ function goToRestaurantSignup() {
 function showPage(page) {
     alert(page);
 }
+function goBack() {
+  if (document.referrer !== "") {
+    window.history.back();
+  } else {
+    window.location.href = "../index.html";
+  }
+}
