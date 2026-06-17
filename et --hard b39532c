@@ -1,9 +1,0 @@
-[33m63ee07e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2026-06-17 14:36:52 +0545}: reset: moving to 63ee07e
-[33mb39532c[m HEAD@{2026-06-17 14:32:36 +0545}: commit: git commit -m
-[33m1a64873[m HEAD@{2026-06-17 14:32:28 +0545}: commit: git commit -m
-[33mc1a7448[m HEAD@{2026-06-17 14:28:27 +0545}: reset: moving to HEAD
-[33mc1a7448[m HEAD@{2026-06-17 14:24:12 +0545}: commit: git commit -m
-[33m6f2347a[m HEAD@{2026-06-17 14:23:43 +0545}: commit: git commit-m
-[33m914f123[m HEAD@{2026-06-07 13:08:19 +0545}: commit: git commit -m "Updated login page styling"
-[33m63ee07e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2026-06-07 12:54:39 +0545}: commit: git commit -m "Updated volunteer login page, restaurant login and signup pages, index.html, and style.css for improved design and functionality."
-[33m4d0d89c[m HEAD@{2026-06-07 11:15:08 +0545}: commit (initial): git commit -m "Initial commit"

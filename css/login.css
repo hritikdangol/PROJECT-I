@@ -31,20 +31,16 @@ body{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
 .page h1{
     text-align: center;
     color: rgb(0,136,61);
     margin-bottom: 10px;
 }
-
 .page p{
     text-align: center;
     margin-bottom: 20px;
     color: #555;
 }
-
-/* Styled the new dropdown container */
 .role {
     display: flex;
     flex-direction: column;
@@ -58,7 +54,6 @@ body{
     color: #444;
 }
 
-/* Styled the dropdown menu */
 .role select {
     width: 100%;
     padding: 12px;
