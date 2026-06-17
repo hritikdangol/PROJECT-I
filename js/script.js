@@ -1,24 +1,21 @@
-
-const BASE = "/PROJECT-I/";
-
 function goToLogin() {
-    window.location.href = BASE + "html/login.html";
+    window.location.href = "/PROJECT-I/html/login.html";
 }
 
 function goToSignup() {
-    window.location.href = BASE + "html/signup.html";
+    window.location.href = "/PROJECT-I/html/signup.html";
 }
 
 function goToVolunteerLogin() {
-    window.location.href = BASE + "html/volunteerlogin.html";
+    window.location.href = "/PROJECT-I/html/volunteerlogin.html";
 }
 
 function goToRestaurantLogin() {
-    window.location.href = BASE + "html/restaurantlogin.html";
+    window.location.href = "/PROJECT-I/html/restaurantlogin.html";
 }
 
 function goToRestaurantSignup() {
-    window.location.href = BASE + "html/restaurantsignup.html";
+    window.location.href = "/PROJECT-I/html/restaurantsignup.html";
 }
 
 function showPage(page) {
@@ -29,6 +26,6 @@ function goBack() {
     if (document.referrer !== "") {
         window.history.back();
     } else {
-        window.location.href = BASE + "index.html";
+        window.location.href = "/PROJECT-I/index.html";
     }
 }
