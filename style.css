@@ -167,7 +167,8 @@ body{
         50% { color: #ccc; }
         100% { color: white; }
     }
-.bottom h2{
+.bottom h1 h2{
+    color:white;
     margin:20px 0;
 }
 
