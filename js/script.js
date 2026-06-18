@@ -17,3 +17,10 @@ function goToRestaurantLogin() {
 function goToRestaurantSignup() {
     window.location.href = "/PROJECT-I/html/restaurantsignup.html";
 }
+function goBack() {
+    if (document.referrer !== "") {
+        history.back();
+    } else {
+        window.location.href = "index.html";
+    }
+}
