@@ -144,27 +144,6 @@
     color: #a1ffd5;
 }
 
-.dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 20px;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-}
-
-.dot.active {
-    background: #a1ffd5;
-    width: 22px;
-    border-radius: 5px;
-}
-
 .features-section {
     max-width: 1100px;
     margin: 0 auto;
