@@ -1,6 +1,4 @@
 const slides = document.querySelectorAll(".slide");
-const bgEmoji = document.querySelector(".bg-emoji");
-
 let current = 0;
 function showSlide(index) {
 
