@@ -1,39 +1,54 @@
-let journeyIndex = 0;
+const journeyData = [
+    {
+        icon: "🍽️",
+        title: "Connected Restaurants",
+        text: "Partnered with 100+ local restaurants"
+    },
+    {
+        icon: "📦",
+        title: "Meals Saved",
+        text: "Over 50,000 meals rescued from waste"
+    },
+    {
+        icon: "🤝",
+        title: "Community Volunteers",
+        text: "500+ active volunteers making a difference"
+    },
+    {
+        icon: "🏆",
+        title: "Growing Impact",
+        text: "Expanding to 10+ cities nationwide"
+    }
+];
 
-const journeyIcons = ["🍽️", "📦", "🤝", "🐕"];
-const journeyTitles = [
-    "Connected Restaurants",
-    "Saved Thousands of Meals",
-    "Built a Volunteer Network",
-    "Fed Animals in Need"
-];
-const journeyTexts = [
-    "Partnered with 100+ local restaurants",
-    "Rescued 3,200+ meals from going to waste",
-    "100+ active volunteers joined the mission",
-    "620+ animals fed through food donations"
-];
+let currentIndex = 0;
+let autoRotate;
 
 function showJourney(index) {
-    journeyIndex = index;
+    currentIndex = index;
+    const data = journeyData[index];
+    
+    const card = document.getElementById('journeyCard');
+    card.style.opacity = '0';
+    
+    setTimeout(() => {
+        document.getElementById('journeyIcon').textContent = data.icon;
+        document.getElementById('journeyTitle').textContent = data.title;
+        document.getElementById('journeyText').textContent = data.text;
+        card.style.opacity = '1';
+    }, 200);
 
-    document.getElementById("journeyIcon").innerHTML = journeyIcons[index];
-    document.getElementById("journeyTitle").innerHTML = journeyTitles[index];
-    document.getElementById("journeyText").innerHTML = journeyTexts[index];
+    document.querySelectorAll('.dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
 
-    for (let i = 0; i < 4; i++) {
-        document.getElementById("dot" + i).className = "dot";
-    }
-    document.getElementById("dot" + index).className = "dot active";
+    clearInterval(autoRotate);
+    autoRotate = setInterval(() => {
+        currentIndex = (currentIndex + 1) % journeyData.length;
+        showJourney(currentIndex);
+    }, 4000);
 }
 
-function nextJourney() {
-    journeyIndex = journeyIndex + 1;
-    if (journeyIndex > 3) {
-        journeyIndex = 0;
-    }
-    showJourney(journeyIndex);
-}
-
-showJourney(0);
-setInterval(nextJourney, 4000);
+document.addEventListener('DOMContentLoaded', () => {
+    showJourney(0);
+});
