@@ -10,12 +10,12 @@ html {
 /*SLIDER YETA*/
 
 .hero{
-    height:280px;
+    height:350px;
     position: relative;
     background: #0f4c35;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
@@ -101,32 +101,51 @@ body{
     font-size: 12px;
     font-style:italic;
 }
-
-.main p{
-    font-size:18px;
-    max-width:800px;
-    margin:auto;
-    line-height:1.6;
-}
-.main-details{
-  color: #0f4c35;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top:5px;
-}
-.main-details div{
-    font-size:18px;
-    align-items:center;
-    padding:20px;
-    background:#a1ffd5;
-    border-radius:20px;
+.section{
     display:flex;
-    flex-direction:column;
-    padding:30px;
-    margin-top:60px;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:40px auto;
+    gap:40px;
+}
+
+/*img slide ko section*/
+.text{
+    flex:1;
+    color:#ffffff;
+}
+
+.text h2{
+    font-size:30px;
     margin-bottom:10px;
+}
+
+.text p{
+    line-height:2.5;
+}
+.imgslider{
+    width:450px;
+    height:320px;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    background:#000;
+}
+
+.imgSlide{
+    width:100%;
+    height:100%;
+    object-fit:fill; 
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:opacity 1s ease;
+}
+
+.activeImg{
+    opacity:1;
 }
 .bottom{
     background: #ececec;

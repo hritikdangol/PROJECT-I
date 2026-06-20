@@ -24,3 +24,23 @@ function goBack() {
         window.location.href = "index.html";
     }
 }
+
+/*image slider yeta xa*/
+const imgSlides = document.querySelectorAll(".imgSlide");
+
+let currentImg = 0;
+
+function imageSlider(){
+
+    imgSlides[currentImg].classList.remove("activeImg");
+
+    currentImg++;
+
+    if(currentImg >= imgSlides.length){
+        currentImg = 0;
+    }
+
+    imgSlides[currentImg].classList.add("activeImg");
+}
+
+setInterval(imageSlider, 3000);
