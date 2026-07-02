@@ -17,6 +17,5 @@ setInterval(() => {
     if(current >= slides.length){
         current = 0;
     }
-
     showSlide(current);
 }, 4000);
