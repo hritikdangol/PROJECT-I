@@ -38,9 +38,6 @@ function showJourney(index) {
         card.style.opacity = '1';
     }, 200);
 
-    document.querySelectorAll('.dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-    });
 
     clearInterval(autoRotate);
     autoRotate = setInterval(() => {
