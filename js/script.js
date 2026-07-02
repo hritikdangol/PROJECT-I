@@ -25,6 +25,20 @@ function goBack() {
     }
 }
 
+
+/*checkout ko lagi*/
+function bookNow(name, price) {
+
+    localStorage.setItem("foodName", name);
+    localStorage.setItem("foodPrice", price);
+
+    if (window.location.pathname.includes("browsebox.html")) {
+        window.location.href = "checkout.html";
+    } else {
+        window.location.href = "html/checkout.html";
+    }
+}
+
 /*image slider yeta xa*/
 const imgSlides = document.querySelectorAll(".imgSlide");
 

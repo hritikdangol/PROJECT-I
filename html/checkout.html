@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | SaveBites</title>
+
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+
+<div class="checkout">
+
+    <div class="header">
+        <h1>Checkout</h1>
+        <p>Complete your food box reservation</p>
+    </div>
+
+    <div class="order">
+        <h2>Order Summary</h2>
+        <div class="summary-row">
+            <span>Food Box</span>
+            <span id="foodName"></span>
+        </div>
+
+        <div class="summary-row">
+            <span>Price</span>
+            <span>Rs. <span id="foodPrice"></span></span>
+        </div>
+
+    </div>
+
+    <form id="checkoutForm">
+        <label>Full Name</label>
+        <input type="text" required>
+        <label>Phone Number</label>
+        <input type="tel" required>
+        <label>Pickup Time</label>
+        <input type="time" required>
+        <label>Payment Method</label>
+
+        <select required>
+            <option value="">Choose Payment</option>
+            <option>Cash on Pickup</option>
+            <option>eSewa</option>
+            <option>Khalti</option>
+            <option>IME Pay</option>
+        </select>
+        <label>Special Instructions</label>
+        <textarea rows="4"></textarea>
+        <div class="buttons">
+            <button class="confirm" type="submit">
+                Confirm Booking
+            </button>
+            <button class="cancel" type="button" onclick="window.history.back()">
+                Cancel
+            </button>
+        </div>
+    </form>
+</div>
+<script src="../js/checkout.js"></script>
+
+</body>
+</html>
