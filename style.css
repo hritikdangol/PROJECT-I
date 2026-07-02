@@ -9,7 +9,7 @@ html {
 }
 /*SLIDER YETA*/
 
-.hero{
+.intro{
     height:350px;
     position: relative;
     background: #0f4c35;
@@ -49,10 +49,10 @@ html {
     border-radius: 30px;
     font-weight: bold;
 }
-.hero h1{
+.intro h1{
     font-size:32px;
 }
-.hero a{
+.intro a{
     font-size:12px;
 }
 /*yetasamma*/
