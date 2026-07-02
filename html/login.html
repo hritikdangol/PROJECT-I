@@ -1,37 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    
     <button class="back-circle" onclick="goBack()">←</button>
+    <div class="page">
+        <h1>Customer Login</h1>
+        <p>Log in to your SaveBites account</p>
+        <div class="role">
+            <label for="role-select">Login as another role:</label>
+            <select id="role-select" onchange="if(this.value) window[this.value]();">
+                <option value="">Customer</option>
+                <option value="goToVolunteerLogin">Volunteer</option>
+                <option value="goToRestaurantLogin">Restaurant</option>
+            </select>
+        </div>
+
+        <form onsubmit="login(event)">
+            <div class="form-group">
+                <div>Email Address</div>
+                <input  type="email"  id="email"   placeholder="you@example.com"   required>
+                <div>Password</div>
+                <input   type="password" id="password" placeholder="••••••••"required>
+            </div>
+            <a class="forgot" href="#">Forgot Password?</a>
+            <button class="login-btn" type="submit">
+                Log In
+            </button>
+        </form>
+        <div class="bottom-text">
+            Don't have an account?
+            <button type="button" onclick="goToSignup()">
+                Sign Up
+            </button>
+        </div>
+    </div>
     <script src="../js/script.js"></script>
-    
+    <script src="../js/login.js"></script>
 </body>
-
-<div class="page">
-    <h1>Customer Login</h1>
-    <p>Log in to your SaveBites account</p>
-    <div class="role">
-        <label for="role-select">Login as another role:</label>
-        <select id="role-select" onchange="if (this.value) window[this.value]()">
-           <option value="">Customers</option>
-            <option value="goToVolunteerLogin">Volunteer</option>
-            <option value="goToRestaurantLogin">Restaurant</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <div>Email Address</div>
-        <input type="email" placeholder="you@example.com">
-        <div>Password</div>
-        <input type="password" placeholder="••••••••">
-    </div>
-    
-    <a class="forgot" href="#">Forgot Password?</a>
-    <button class="login-btn" type="submit">Log In</button>
-    
-    <div class="bottom-text">
-        Don't have an account?
-        <button type="button" onclick="goToSignup()">Sign Up</button>
-    </div>
-</div>
+</html>
