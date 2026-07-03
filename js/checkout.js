@@ -1,6 +1,5 @@
 document.getElementById("foodName").innerHTML =
 localStorage.getItem("foodName");
-
 document.getElementById("foodPrice").innerHTML =
 localStorage.getItem("foodPrice");
 document.getElementById("checkoutForm").addEventListener("submit", function(event) {
