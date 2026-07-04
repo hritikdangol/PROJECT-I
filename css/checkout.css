@@ -54,6 +54,8 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
+
 input,select,textarea {
     width: 100%;
     padding: 10px;
@@ -61,12 +63,15 @@ input,select,textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 textarea {
     resize: none;
 }
+
 .buttons {
     margin-top: 20px;
 }
+
 .confirm,.cancel {
     width: 100%;
     padding: 10px;
