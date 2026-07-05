@@ -37,6 +37,8 @@ function bookNow(name, price) {
     }
 }
 
+
+
 /*image slider yeta xa*/
 const imgSlides = document.querySelectorAll(".imgSlide");
 
