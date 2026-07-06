@@ -8,7 +8,7 @@ function showSlide(index) {
 
     slides[index].classList.add("active");
 
-    
+    bgEmoji.textContent = slides[index].dataset.emoji;
 }
 
 setInterval(() => {
