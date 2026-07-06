@@ -22,11 +22,21 @@ body{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    margin:100px;
+  
+    margin-bottom: 105px;
 }
-.emoji {
-    font-size: 80px;
-    margin-bottom: 10px;
-    opacity: 1;
+.icon i{
+    font-size:80px;
+    color:#F4C542;
+}
+
+.icon i{
+    transition:0.3s;
+}
+
+.icon i:hover{
+    transform:scale(1.1);
 }
 
 .slide{
@@ -63,6 +73,8 @@ body{
     font-size:12px;
 }
 /*yetasamma*/
+
+
 body{
     background:#0f4c35;
 
