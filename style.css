@@ -22,9 +22,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin:100px;
-  
-    margin-bottom: 105px;
+    margin:80px;
 }
 .icon i{
     font-size:80px;
@@ -126,8 +124,9 @@ body{
     justify-content:space-between;
     align-items:center;
     width:90%;
-    margin:40px auto;
+    margin:auto;
     gap:40px;
+    padding:100px;
 }
 
 /*img slide ko section*/
