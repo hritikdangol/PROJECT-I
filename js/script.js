@@ -28,8 +28,24 @@ function goBack() {
 
 /*checkout ko lagi*/
 function bookNow(name, price) {
+
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (currentUser === null) {
+        alert("Please log in before booking a food box.");
+
+        if (window.location.pathname.includes("browsebox.html")) {
+            window.location.href = "login.html";
+        } else {
+            window.location.href = "html/login.html";
+        }
+
+        return;
+    }
+
     localStorage.setItem("foodName", name);
     localStorage.setItem("foodPrice", price);
+
     if (window.location.pathname.includes("browsebox.html")) {
         window.location.href = "checkout.html";
     } else {
@@ -40,10 +56,11 @@ function bookNow(name, price) {
 const hamburger = document.getElementById("hamburger");
 const nav = document.getElementById("nav-right");
 
-hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
-
+if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+}
 /*image slider yeta xa*/
 const imgSlides = document.querySelectorAll(".imgSlide");
 
