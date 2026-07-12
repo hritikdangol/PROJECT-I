@@ -24,81 +24,100 @@
     padding: 0 20px;
 }
 
-/* Tablets */
-@media (max-width: 992px) {
-
-    .foodbox-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .foodbox-hero h1 {
-        font-size: 28px;
-    }
-
+/* Hamburger */
+.hamburger{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
 }
 
-/* Phones */
-@media (max-width: 768px) {
+/* Mobile Navbar */
+@media (max-width:768px){
 
-    .foodbox-hero {
-        padding: 45px 15px;
+    .nav{
+        position:relative;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
     }
 
-    .foodbox-hero h1 {
-        font-size: 24px;
+    .logo{
+        align-items:flex-start;
     }
 
-    .foodbox-hero p {
-        font-size: 13px;
+    .logo img{
+        margin-top:0;
+        transform:scale(1.2);
     }
 
-    .foodbox-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 15px;
+    .hamburger{
+        display:block;
     }
 
-    .food-card {
-        width: 100%;
-        max-width: 350px;
-        margin: auto;
+    .nav-right{
+        display:none;
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#0f4c35;
+        flex-direction:column;
+        align-items:center;
+        padding:15px 0;
+        z-index:1000;
     }
 
-    .food-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+    .nav-right.active{
+        display:flex;
     }
 
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-
-    .foodbox-hero {
-        padding: 35px 10px;
+    .nav-right a{
+        width:100%;
+        text-align:center;
     }
 
-    .foodbox-hero h1 {
-        font-size: 20px;
+    .nav-right button{
+        width:90%;
+        margin:10px 0;
+        padding:12px;
+        font-size:16px;
     }
 
-    .foodbox-hero p {
-        font-size: 12px;
+    /* Hero */
+    .foodbox-hero{
+        padding:45px 15px;
     }
 
-    .foodbox-grid {
-        padding: 0 10px;
+    .foodbox-hero h1{
+        font-size:24px;
     }
 
-    .food-card {
-        max-width: 100%;
+    .foodbox-hero p{
+        font-size:13px;
     }
 
-    .food-card button {
-        width: 100%;
-        padding: 12px;
+    /* Food Grid */
+    .foodbox-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:0 15px;
     }
 
+    .food-card{
+        width:100%;
+        max-width:350px;
+        margin:auto;
+    }
+
+    .food-card img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+    }
+
+    footer{
+        padding:20px;
+    }
 }
