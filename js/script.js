@@ -36,8 +36,13 @@ function bookNow(name, price) {
         window.location.href = "html/checkout.html";
     }
 }
+/*hamburger*/
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav-right");
 
-
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
 
 /*image slider yeta xa*/
 const imgSlides = document.querySelectorAll(".imgSlide");
