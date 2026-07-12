@@ -193,9 +193,31 @@ footer p {
     margin: 4px 0;
 }
 
-@media (max-width: 768px) {
-    .how-grid,
-    .features-section {
-        grid-template-columns: 1fr;
+@media (max-width:768px){
+
+    .about-hero{
+        padding:40px 15px;
+    }
+
+    .about-hero h1{
+        font-size:28px;
+    }
+
+    .about-intro,
+    .story-section,
+    .how-section,
+    .journey-section,
+    .features-section{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .journey-card{
+        max-width:100%;
+    }
+
+    .feature-card,
+    .how-card{
+        padding:20px;
     }
 }
