@@ -85,22 +85,26 @@ function imageSlider(){
 
 setInterval(imageSlider, 3000);
 
+// banner slider
 
-//bannenr//
-const banners = document.querySelectorAll(".banner");
+document.addEventListener("DOMContentLoaded", function(){
 
-let current = 0;
+    const banners = document.querySelectorAll(".banner");
 
-setInterval(() => {
+    let current = 0;
 
-    banners[current].classList.remove("active");
+    setInterval(() => {
 
-    current++;
+        banners[current].classList.remove("active");
 
-    if(current >= banners.length){
-        current = 0;
-    }
+        current++;
 
-    banners[current].classList.add("active");
+        if(current >= banners.length){
+            current = 0;
+        }
 
-},4000);
+        banners[current].classList.add("active");
+
+    },4000);
+
+});

@@ -43,6 +43,7 @@ body{
 }
 .banner.active{
     opacity:1;
+
 }
 .overlay{
     position:absolute;
@@ -71,19 +72,20 @@ body{
 }
 
 .slide{
-    display:none;
     position:absolute;
     width:100%;
     padding:220px;
     box-sizing:border-box;
     left:0;
     top:0;
+    opacity:0;
+    transition:all 0.8s ease;
 }
 
 .slide.active{
-    display: block;
+    opacity:1;
+    transform:translateX(0);
 }
-
 .slide span{
     color: #a1ffd5;
 }
