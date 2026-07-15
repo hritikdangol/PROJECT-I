@@ -25,17 +25,14 @@ body{
 
 .banner-slider{
     position:absolute;
-    width:100%;
+    width: 100%;
     height:100%;
     top:0;
     left:0;
 }
-
 .banner{
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    position:relative;
+    object-fit:fill;
     opacity:0;
     transition:opacity 1s ease-in-out;
 }
@@ -48,7 +45,7 @@ body{
     position:absolute;
     width:100%;
     height:100%;
-    background:rgba(0,0,0,.45);
+    background:rgba(0,0,0,0.70);
     top:0;
     left:0;
 }
@@ -74,7 +71,7 @@ body{
     display:none;
     position:absolute;
     width:100%;
-    padding:20px;
+    padding:220px;
     box-sizing:border-box;
     left:0;
     top:0;

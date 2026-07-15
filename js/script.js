@@ -61,6 +61,10 @@ if (hamburger && nav) {
         nav.classList.toggle("active");
     });
 }
+
+
+
+
 /*image slider yeta xa*/
 const imgSlides = document.querySelectorAll(".imgSlide");
 
