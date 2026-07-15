@@ -1,4 +1,7 @@
-
+.feature-icon i { 
+    color: #0f4c35; }
+     .journey-icon i {
+         color: #ffffff; }
 .about-hero {
     background: linear-gradient(135deg, #0f4c35 0%, #1f8b5e 100%);
     color: white;
