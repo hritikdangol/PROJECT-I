@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sign Up - SaveBites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Sign Up</title>
     <link rel="stylesheet" href="../css/signup.css">
 </head>
 
 <body>
-<button class="back-circle" onclick="goBack()">←</button>
-<div class="container">
-    <h1>Create Account</h1>
-    <p>Join SaveBites today</p>
 
-    <form onsubmit="register(event)">
+    <button class="back-circle" onclick="goBack()">←</button>
 
-        <label>Register As</label>
-        <select id="role">
-            <option>Customer</option>
-            <option>Volunteer</option>
-        </select>
+    <div class="container">
 
-        <label>Full Name</label>
-        <input type="text" id="fullname" placeholder="Enter full name" required>
+        <h1>Create Account</h1>
+        <p>Join SaveBites</p>
 
-        <label>Email</label>
-        <input type="email" id="email" placeholder="Enter email" required>
+        <form onsubmit="signup(event)">
 
-        <label>Phone Number</label>
-        <input type="tel" id="phone" placeholder="98XXXXXXXX" required>
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
 
-        <label>Password</label>
-        <input type="password" id="password" placeholder="Create password" required>
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
 
-        <label>Confirm Password</label>
-        <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="98XXXXXXXX" required>
 
-        <button type="submit">Register</button>
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
 
-    </form>
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
 
-    <p class="login-link">
-        Already have an account?
-        <a href="login.html">Login</a>
-    </p>
-</div>
-<script src="../js/script.js"></script>
-<script src="../js/signup.js"></script>
+            <button type="submit" class="signup-btn">Sign Up</button>
+
+        </form>
+
+        <p class="bottom-text">
+            Already have an account?
+            <button type="button" onclick="goToLogin()">Login</button>
+        </p>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/signup.js"></script>
+
 </body>
 </html>

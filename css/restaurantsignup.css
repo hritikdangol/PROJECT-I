@@ -24,14 +24,14 @@ body{
 }
 
 .container{
-    width:450px;
-    margin:50px auto;
+    width:500px;
+    margin:40px auto;
     background:white;
-    padding:35px;
+    padding:30px;
     border:1px solid #ccc;
 }
 
-h1{
+.container h1{
     text-align:center;
     color:rgb(0,136,61);
     margin-bottom:10px;
@@ -39,8 +39,8 @@ h1{
 
 .container p{
     text-align:center;
-    margin-bottom:20px;
     color:#555;
+    margin-bottom:20px;
 }
 
 label{
@@ -59,43 +59,44 @@ input{
 
 input:focus{
     outline:none;
-    border-color:rgb(0,136,61);
+    border:1px solid rgb(0,136,61);
 }
 
-.signup-btn{
+button{
     width:100%;
     padding:12px;
-    margin-top:25px;
+    margin-top:20px;
+    border:none;
     background:rgb(0,136,61);
     color:white;
-    border:none;
+    font-size:16px;
     cursor:pointer;
 }
 
-.signup-btn:hover{
+button:hover{
     background:rgb(0,110,50);
 }
 
 .bottom-text{
-    margin-top:20px;
     text-align:center;
+    margin-top:20px;
 }
 
-.bottom-text button{
-    background:none;
-    border:none;
+.bottom-text a{
     color:rgb(0,136,61);
-    cursor:pointer;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.bottom-text button:hover{
+.bottom-text a:hover{
     text-decoration:underline;
 }
 
 @media(max-width:768px){
-    .container{
-        width:90%;
-        margin:30px auto;
-        padding:25px;
-    }
+
+.container{
+    width:90%;
+    padding:20px;
+}
+
 }
