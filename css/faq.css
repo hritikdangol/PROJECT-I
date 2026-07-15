@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a5336; 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 10%;
+    width: 100%;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-main {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.logo-sub {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.nav-links .active {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 40px;
+    text-align: center;
+    flex: 1;
+}
+
+.faq-title {
+    font-size: 36px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.faq-subtitle {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: rgba(255, 255, 255, 0.08); 
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    transform: translateY(-2px);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #bbf246;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+.footer {
+    padding: 30px 10%;
+    font-size: 13px;
+    opacity: 0.6;
+}
+.animated-page {
+    animation: fadeInPage 0.8s ease-out forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
