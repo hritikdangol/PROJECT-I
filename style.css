@@ -14,7 +14,8 @@ body{
 /*SLIDER YETA*/
 .intro{
     position:relative;
-    min-height:100vh;
+    width:100%;
+    height:100vh;
     overflow:hidden;
     display:flex;
     justify-content:center;
@@ -22,25 +23,27 @@ body{
     text-align:center;
     color:white;
 }
-
 .banner-slider{
     position:absolute;
-    width: 100%;
-    height:100%;
     top:0;
     left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 .banner{
-    position:relative;
-    object-fit:fill;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
     opacity:0;
     transition:opacity 1s ease-in-out;
 }
-
 .banner.active{
     opacity:1;
 }
-
 .overlay{
     position:absolute;
     width:100%;
@@ -102,7 +105,6 @@ body{
 }
 /*yetasamma*/
 
-
 body{
     background:#0f4c35;
 
@@ -153,7 +155,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    width:90%;
+    width:100%;
     margin:auto;
     gap:40px;
     padding:100px;
@@ -175,8 +177,8 @@ body{
 }
 .imgslider{
     width:100%;
-    max-width:450px;
-    height:320px;
+    max-width:600px;
+    height:400px;
     position:relative;
     overflow:hidden;
     border-radius:15px;
@@ -192,14 +194,13 @@ body{
     opacity:0;
     transition:opacity 1s ease;
 }
-
 .activeImg{
     opacity:1;
 }
 .bottom{
     background: #ececec;
     padding: 60px 20px;
-    margin: 80px auto;
+    margin: 200px auto 0;
     max-width: 900px;
     text-align: center;
     border-radius: 12px;
@@ -242,7 +243,7 @@ button:hover{
     transform:scale(1.05);
 }
 .featured-food{
-    margin-top:80px;
+    margin-top:210px;
 }
 .featured-food h2{
     color:white;
