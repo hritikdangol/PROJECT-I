@@ -8,38 +8,50 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
+
     <button class="back-circle" onclick="goBack()">←</button>
-    <div class="page">
-        <h1>Customer Login</h1>
-        <p>Log in to your SaveBites account</p>
-        <div class="role">
-            <label for="role-select">Login as another role:</label>
-            <select id="role-select" onchange="if(this.value) window[this.value]();">
-                <option value="">Customer</option>
-                <option value="goToVolunteerLogin">Volunteer</option>
-                <option value="goToRestaurantLogin">Restaurant</option>
-            </select>
+
+    <div class="container">
+
+        <div class="left">
+            <img src="../assets/login.png" alt="Login Image">
         </div>
-        <form onsubmit="login(event, 'Customer')">
-            <div class="form-group">
-                <div>Email Address</div>
-                <input  type="email"  id="email"   placeholder="you@example.com"   required>
-                <div>Password</div>
-                <input   type="password" id="password" placeholder="••••••••"required>
+
+        <div class="right">
+
+            <h1>Customer Login</h1>
+            <p>Log in to your SaveBites account</p>
+
+            <div class="role">
+                <label>Login as:</label>
+
+                <select onchange="if(this.value) window[this.value]();">
+                    <option>Customer</option>
+                    <option value="goToVolunteerLogin">Volunteer</option>
+                    <option value="goToRestaurantLogin">Restaurant</option>
+                </select>
             </div>
-            <a class="forgot" href="#">Forgot Password?</a>
-            <button class="login-btn" type="submit">
-                Log In
-            </button>
-        </form>
-        <div class="bottom-text">
-            Don't have an account?
-            <button type="button" onclick="goToSignup()">
-                Sign Up
-            </button>
+
+            <form onsubmit="login(event,'Customer')">
+
+                <label>Email</label>
+                <input type="email" id="email" required>
+
+                <label>Password</label>
+                <input type="password" id="password" required>
+
+                <a href="#">Forgot Password?</a>
+
+                <button class="login-btn">
+                    Login
+                </button>
+
+            </form>
+            <p class="bottom-text">
+                Don't have an account?
+                <button onclick="goToSignup()">Sign Up</button>
+            </p>
         </div>
     </div>
-    <script src="../js/script.js"></script>
-    <script src="../js/login.js"></script>
 </body>
 </html>

@@ -1,137 +1,137 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-.back-circle {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    width: 40px;
-    height: 40px;
-    background: rgb(0,136,61);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    background: #f2faf2;
+    background:#eef8ef;
 }
 
-.page{
-    width: 400px;
-    margin: 80px auto;
-    background: white;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.back-circle{
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:rgb(0,136,61);
+    color:white;
+    font-size:20px;
+    cursor:pointer;
 }
 
-.page h1{
-    text-align: center;
-    color: rgb(0,136,61);
-    margin-bottom: 10px;
+.container{
+    width:900px;
+    margin:60px auto;
+    display:flex;
+    background:white;
+    border:1px solid #ccc;
 }
 
-.page p{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #555;
-}
-.role {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    gap: 8px;
+.left{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#dff5e4;
 }
 
-.role label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
+.left img{
+    width:80%;
 }
 
-/* Styled the dropdown menu */
-.role select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: white;
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-    outline: none;
+.right{
+    width:55%;
+    padding:40px;
 }
 
-.role select:focus {
-    border-color: rgb(0,136,61);
+.right h1{
+    color:rgb(0,136,61);
+    margin-bottom:10px;
 }
 
-.form-group{
-    margin-bottom: 15px;
+.right p{
+    margin-bottom:20px;
+    color:#555;
 }
 
-.form-group div{
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
+.role{
+    margin-bottom:20px;
 }
 
-.form-group input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+.role label{
+    display:block;
+    margin-bottom:5px;
 }
 
-.form-group input:focus{
-    outline: none;
-    border-color: rgb(0,136,61);
+.role select{
+    width:100%;
+    padding:10px;
 }
 
-.forgot{
-    display: block;
-    margin: 10px 0;
-    text-align: right;
-    color: rgb(0,136,61);
-    text-decoration: none;
+form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+form input{
+    width:100%;
+    padding:10px;
+}
+
+form a{
+    display:block;
+    text-align:right;
+    margin-top:10px;
+    text-decoration:none;
+    color:green;
 }
 
 .login-btn{
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 6px;
-    background: rgb(0,136,61);
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-btn:hover{
-    background: rgb(0,110,50);
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    background:rgb(0,136,61);
+    color:white;
+    border:none;
+    cursor:pointer;
 }
 
 .bottom-text{
-    text-align: center;
-    margin-top: 20px;
+    margin-top:20px;
 }
 
 .bottom-text button{
-    background: none;
-    border: none;
-    color: rgb(0,136,61);
-    font-weight: bold;
-    cursor: pointer;
+    border:none;
+    background:none;
+    color:green;
+    cursor:pointer;
 }
 
-.bottom-text button:hover{
-    text-decoration: underline;
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+    flex-direction:column;
+}
+
+.left{
+    width:100%;
+    padding:20px;
+}
+
+.right{
+    width:100%;
+}
+
+.left img{
+    width:200px;
+}
+
 }
