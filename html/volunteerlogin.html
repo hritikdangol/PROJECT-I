@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Login</title>
     <link rel="stylesheet" href="../css/volunteerlogin.css">
 </head>
+
 <body>
+
     <button class="back-circle" onclick="goBack()">←</button>
-    <div class="container">
-        <h1>Volunteer Login</h1>
-        <p>Sign in to your SaveBites volunteer account</p>
-        <form onsubmit="login(event, 'Volunteer')">
-            <label>Email</label>
-            <input type="email"  id="email" placeholder="Enter email" required>
-            <label>Password</label>
-            <input type="password" id="password" placeholder="Enter password" required>
-            <button type="submit">Login</button>
-            <p>
+
+    <div class="login-container">
+
+        <div class="image-box">
+            <img src="../asset/login2.png" alt="Volunteer Login">
+        </div>
+
+        <div class="login-box">
+
+            <h1>Volunteer Login</h1>
+            <p>Sign in to your SaveBites volunteer account</p>
+
+            <form onsubmit="login(event,'Volunteer')">
+
+                <label>Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="volunteer@example.com"
+                    required>
+
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                <a href="#" class="forgot">Forgot Password?</a>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+            <p class="register">
                 Don't have an account?
-                <a href="signup.html">Register Here</a>
+                <a href="volunteersignup.html">Register Here</a>
             </p>
-        </form>
+
+        </div>
+
     </div>
+
     <script src="../js/script.js"></script>
     <script src="../js/login.js"></script>
+
 </body>
 </html>

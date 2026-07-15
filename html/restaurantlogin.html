@@ -11,25 +11,56 @@
 <body>
 
     <button class="back-circle" onclick="goBack()">←</button>
+
     <div class="container">
-        <h1>Restaurant Login</h1>
-        <p>Login to manage your food listings</p>
 
-        <form onsubmit="login(event, 'Restaurant')">
+        <div class="left">
+            <img src="../asset/login3.png" alt="Restaurant Login">
+        </div>
 
-            <label>Email Address</label>
-            <input type="email" ="email" placeholder="restaurant@example.com" required>
-            <label>Password</label>
-            <input type="password"id="password" placeholder="Enter Password" required>
-            <a href="#" class="forgot">Forgot Password?</a>
-            <button type="submit">Log In</button>
+        <div class="right">
+
+            <h1>Restaurant Login</h1>
+            <p>Log in to manage your food listings</p>
+
+            <form onsubmit="login(event,'Restaurant')">
+
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="restaurant@example.com"
+                    required>
+
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                <a href="#" class="forgot">Forgot Password?</a>
+
+                <button class="login-btn" type="submit">
+                    Login
+                </button>
+
+            </form>
+
             <p class="bottom-text">
                 Don't have an account?
-                <a href="restaurantsignup.html">Register Restaurant</a>
+                <button type="button" onclick="location.href='restaurantsignup.html'">
+                    Register
+                </button>
             </p>
-        </form>
+
+        </div>
+
     </div>
+
     <script src="../js/script.js"></script>
     <script src="../js/login.js"></script>
+
 </body>
+
 </html>
