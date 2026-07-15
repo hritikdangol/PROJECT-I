@@ -116,7 +116,7 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:15px;
-    background:#0f4c35;
+ background:linear-gradient(135deg, #0f4c35, #00883d);
     flex-wrap:wrap;
 }
 .logo{
