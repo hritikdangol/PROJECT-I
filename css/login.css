@@ -70,6 +70,16 @@ body{
 .role select{
     width:100%;
     padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background:#fff;
+    color:#000;
+    font-size:16px;
+    outline:none;
+}
+
+.role select:focus{
+    border-color:rgb(0,136,61);
 }
 
 form label{
@@ -81,6 +91,21 @@ form label{
 form input{
     width:100%;
     padding:10px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background:#fff;
+    color:#000;
+    font-size:16px;
+    outline:none;
+}
+
+form input:focus{
+    border-color:rgb(0,136,61);
+}
+
+form input::placeholder{
+    color:#888;
 }
 
 form a{
@@ -111,8 +136,6 @@ form a{
     color:green;
     cursor:pointer;
 }
-
-/* Responsive */
 
 @media(max-width:768px){
 
