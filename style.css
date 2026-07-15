@@ -12,17 +12,50 @@ body{
     scroll-behavior:smooth;
 }
 /*SLIDER YETA*/
-
 .intro{
-    height:350px;
-    position: relative;
-    background: #0f4c35;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin:80px;
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.banner-slider{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.banner{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+}
+
+.banner.active{
+    opacity:1;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    top:0;
+    left:0;
+}
+
+.slide{
+    position:relative;
+    z-index:2;
 }
 .icon i{
     font-size:80px;

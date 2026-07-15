@@ -80,3 +80,23 @@ function imageSlider(){
 }
 
 setInterval(imageSlider, 3000);
+
+
+//bannenr//
+const banners = document.querySelectorAll(".banner");
+
+let current = 0;
+
+setInterval(() => {
+
+    banners[current].classList.remove("active");
+
+    current++;
+
+    if(current >= banners.length){
+        current = 0;
+    }
+
+    banners[current].classList.add("active");
+
+},4000);
