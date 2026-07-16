@@ -1,134 +1,171 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-body {
-    background-color: #1a5336; 
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body{
+    background:#0f4c35;
+    color:white;
+}
+/* Navbar */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin:15px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.35);
+    flex-wrap:wrap;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 30px 10%;
-    width: 100%;
+.logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-.logo-area {
-    display: flex;
-    flex-direction: column;
+.logo img{
+    height:50px;
+    width:auto;
+    margin-top:-25px;
+    transform:scale(1.5);
 }
 
-.logo-main {
-    font-weight: bold;
-    font-size: 24px;
+.logo p{
+    color:white;
+    margin-top:-10px;
+    margin-left:3px;
+    font-size:12px;
+    font-style:italic;
 }
 
-.logo-sub {
-    font-size: 11px;
-    opacity: 0.8;
+.nav-right{
+    display:flex;
+    align-items:center;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+.nav button{
+    color:white;
+    background:none;
+    border:none;
+    margin-right:10px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:10px;
 }
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-    opacity: 0.8;
-    transition: all 0.3s ease;
+.nav button:hover{
+    color:rgb(133,196,162);
+    transform:scale(1.06);
+    transition:0.2s;
+}
+.hamburger{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+/* FAQ Section */
+
+.faq-container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
 }
 
-.nav-links a:hover {
-    opacity: 1;
+.faq-title{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:10px;
 }
 
-.nav-links .active {
-    opacity: 1;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-    padding-bottom: 3px;
+.faq-subtitle{
+    text-align:center;
+    margin-bottom:40px;
+    color:#dddddd;
 }
 
-.faq-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 40px;
-    text-align: center;
-    flex: 1;
+.faq-item{
+    background:white;
+    color:#333;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
 }
 
-.faq-title {
-    font-size: 36px;
-    margin-bottom: 12px;
-    font-weight: bold;
+.faq-item h3{
+    color:#0f4c35;
+    margin-bottom:10px;
 }
 
-.faq-subtitle {
-    font-size: 15px;
-    opacity: 0.8;
-    margin-bottom: 50px;
+.faq-item p{
+    line-height:1.6;
 }
 
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
+.faq-item:hover{
+    transform:translateY(-3px);
+    transition:0.3s;
 }
 
-.faq-item {
-    background-color: rgba(255, 255, 255, 0.08); 
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+/* Footer */
+
+.footer{
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+@media (max-width:768px){
+
+.nav{
+    position:relative;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
 }
 
-.faq-item:hover {
-    background-color: rgba(255, 255, 255, 0.14);
-    transform: translateY(-2px);
+.logo{
+    align-items:flex-start;
 }
 
-.faq-item h3 {
-    font-size: 18px;
-    color: #bbf246;
-    margin-bottom: 10px;
+.logo img{
+    margin-top:0;
+    transform:scale(1.2);
 }
 
-.faq-item p {
-    font-size: 14px;
-    line-height: 1.6;
-    opacity: 0.9;
-}
-.footer {
-    padding: 30px 10%;
-    font-size: 13px;
-    opacity: 0.6;
-}
-.animated-page {
-    animation: fadeInPage 0.8s ease-out forwards;
+.hamburger{
+    display:block;
 }
 
-@keyframes fadeInPage {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.nav-right{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#0f4c35;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 0;
+    border-radius:10px;
+    z-index:1000;
+}
+
+.nav-right.active{
+    display:flex;
+}
+
+.nav-right a{
+    width:100%;
+    text-align:center;
+}
+
+.nav-right button{
+    width:90%;
+    margin:10px 0;
+    font-size:18px;
+}
+
 }
