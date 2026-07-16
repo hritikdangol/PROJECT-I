@@ -54,34 +54,6 @@ body{
     left:0;
 }
 
-.slide{
-    position:relative;
-    z-index:2;
-}
-.icon i{
-    font-size:80px;
-    color:#F4C542;
-}
-
-.icon i{
-    transition:0.3s;
-}
-
-.icon i:hover{
-    transform:scale(1.1);
-}
-
-.slide{
-    position:absolute;
-    width:100%;
-    padding:220px;
-    box-sizing:border-box;
-    left:0;
-    top:0;
-    opacity:0;
-    transition:all 0.8s ease;
-}
-
 .slide.active{
     opacity:1;
     transform:translateX(0);
@@ -106,6 +78,51 @@ body{
     font-size:12px;
 }
 /*yetasamma*/
+.welcome-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    padding:20px;
+    text-align:center;
+}
+
+.welcome-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.welcome-content span{
+    color:#8fffd0;
+}
+
+.welcome-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.welcome-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.welcome-buttons a{
+    text-decoration:none;
+    background:#a1ffd5;
+    color:#0f4c35;
+    padding:14px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.welcome-buttons a:hover{
+    background:#7ff3c0;
+    transform:translateY(-3px);
+}
 
 body{
     background:#0f4c35;
@@ -420,9 +437,22 @@ footer p{
 .intro h1{
     font-size:24px;
 }
+.welcome-content h1{
+    font-size:34px;
+}
 
-.icon i{
-    font-size:60px;
+.welcome-content p{
+    font-size:16px;
+    line-height:1.7;
+}
+
+.welcome-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.welcome-buttons a{
+    width:220px;
 }
 
 .food-container,
